@@ -10,5 +10,9 @@
   },
   "scripts": {
     "start": "bin/rails s"
+  },
+  "devDependencies": {
+    "vite": "^5.0.4",
+    "vite-plugin-ruby": "^5.0.0"
   }
 }

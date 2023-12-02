@@ -1,0 +1,11 @@
+{
+  "name": "ss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cody Williams <cody.williams@untappd.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Code-yWilliams/ss.git"
+  }
+}

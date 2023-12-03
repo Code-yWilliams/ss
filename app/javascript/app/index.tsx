@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Link } from "@mui/material";
+import { Link } from "@mui/material";
 
 const App = () => {
   return (
     <>
-      <div>Hello my name is Cody</div>
+      <div>Hello. You are logged in. This is the SPA</div>
       <Link href="/logout" variant="button">
         Log Out
       </Link>

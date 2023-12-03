@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { createRoot } from "react-dom/client";
 
-import { Theme } from "@components";
+import { Theme } from "@app/components";
 
 // imports param is an object that looks like
 // const imports = {
@@ -15,10 +15,6 @@ type Imports = {
 };
 
 const componentLoader = (imports: Imports = {}) => {
-  for (let i = 1; i <= 10; i++) {
-    console.log("POOP");
-  }
-
   document.addEventListener("DOMContentLoaded", () => {
     const components = Array.prototype.slice.call(
       document.querySelectorAll("[data-component]")

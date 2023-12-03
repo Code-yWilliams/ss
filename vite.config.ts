@@ -25,10 +25,10 @@ export const baseConfig: UserConfig = {
   },
   resolve: {
     alias: {
-      "@components": path.resolve(__dirname, "./app/javascript/components"),
-      "@theme": path.resolve(__dirname, "./app/javascript/theme"),
-      "@utils": path.resolve(__dirname, "./app/javascript/utils"),
-      "@shared": path.resolve(__dirname, "./app/javascript/shared"),
+      "@components": path.resolve(__dirname, "./app/javascript/app/components"),
+      "@theme": path.resolve(__dirname, "./app/javascript/app/theme"),
+      "@utils": path.resolve(__dirname, "./app/javascript/app/utils"),
+      "@shared": path.resolve(__dirname, "./app/javascript/app/shared"),
     },
   },
 };

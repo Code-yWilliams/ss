@@ -20,11 +20,13 @@
     "strictPropertyInitialization": false,
     "paths": {
       "@app/*": ["app/javascript/app/*"],
-      "@components/*": ["app/javascript/components/*"],
-      "@components": ["app/javascript/components"],
-      "@theme/*": ["app/javascript/theme"],
-      "@utils/*": ["app/javascript/utils/*"],
-      "@shared/*": ["app/javascript/shared/*"]
+      "@components/*": ["app/javascript/app/components/*"],
+      "@components": ["app/javascript/app/components"],
+      "@theme/*": ["app/javascript/app/theme"],
+      "@utils/*": ["app/javascript/app/utils/*"],
+      "@shared/*": ["app/javascript/app/shared/*"],
+      "@typings/*": ["app/javascript/app/typings/*"],
+      "@stores/*": ["app/javascript/app/stores/*"]
     }
   },
   "include": ["."],

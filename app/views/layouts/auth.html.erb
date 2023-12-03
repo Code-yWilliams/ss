@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= csrf_meta_tags %>
+    <%= vite_client_tag %>
+    <%= vite_typescript_tag 'auth' %>
+
+    <style>@import url(https://use.typekit.net/ejb4lqw.css);</style>
+
+    <title>SS - A Secret Santa App</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  </head>
+
+  <body>
+    <noscript>Oops. You need to enable JavaScript to run this app.</noscript>
+    <%= yield %>
+  </body>
+</html>

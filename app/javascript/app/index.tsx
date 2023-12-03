@@ -1,6 +1,6 @@
 import React from "react";
 
-const App = ({ config }) => {
+const App = () => {
   return <div>Hello my name is Cody</div>;
 };
 

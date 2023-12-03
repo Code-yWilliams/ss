@@ -1,0 +1,4 @@
+The devise initializer is set to render views from users/registrations and users/sessions if they are available.
+Otherwise, it will render the default devise views.
+
+render a view here (e.g. new.html.erb) with either regular erb or react_component helper to override the default views

@@ -15,6 +15,10 @@ type Imports = {
 };
 
 const componentLoader = (imports: Imports = {}) => {
+  for (let i = 1; i <= 10; i++) {
+    console.log("POOP");
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const components = Array.prototype.slice.call(
       document.querySelectorAll("[data-component]")

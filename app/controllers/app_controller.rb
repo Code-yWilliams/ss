@@ -3,7 +3,7 @@ class AppController < ApplicationController
 
   def index
     @config = {
-      cody: 1
+      environment: Rails.env
     }
   end
 end

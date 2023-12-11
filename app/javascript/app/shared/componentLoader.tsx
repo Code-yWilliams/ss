@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
 import { createRoot } from "react-dom/client";
 
-import { Theme } from "@app/components";
+import { Theme } from "@components";
 
-// imports param is an object that looks like
+// imports param is an object that looks like this;
 // const imports = {
 //   Tool: () => import('@components/Tool/index'),
 // }

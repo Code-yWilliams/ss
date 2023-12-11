@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "@mui/material";
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "@app/components/ScrollToTop";
 import { useRootConfig, useUserStore } from "@stores/hooks";
 import { camelizeKeys } from "@app/utils/camelize";
+import { AppLayout } from "@components";
 
 type Props = {
   config: any;
@@ -19,10 +19,7 @@ const App = ({ config, user }: Props) => {
   return (
     <Router>
       <ScrollToTop />
-      <div>Hello. You are logged in. This is the SPA</div>
-      <Link href="/logout" variant="button">
-        Log Out
-      </Link>
+      <AppLayout />
     </Router>
   );
 };

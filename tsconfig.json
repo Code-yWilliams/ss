@@ -28,7 +28,9 @@
       "@typings/*": ["app/javascript/app/typings/*"],
       "@stores/*": ["app/javascript/app/stores/*"],
       "@routes/*": ["app/javascript/app/routes/*"],
-      "@pages/*": ["app/javascript/app/pages/*"]
+      "@pages/*": ["app/javascript/app/pages/*"],
+      "@lib/*": ["app/javascript/app/lib/*"],
+      "@api/*": ["app/javascript/app/lib/api/*"]
     }
   },
   "include": ["."],

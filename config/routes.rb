@@ -17,4 +17,6 @@ Rails.application.routes.draw do
     sign_out: 'logout',
     password: 'forgot-password'
   }, controllers: {}
+
+  draw :api_routes
 end

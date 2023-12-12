@@ -1,4 +1,4 @@
-const camelize = (str: string) => {
+export const camelize = (str: string) => {
   const parts = str.split("_");
   const first = parts.shift();
   return [
@@ -7,12 +7,26 @@ const camelize = (str: string) => {
   ].join("");
 };
 
-export default camelize;
-
 export const camelizeKeys = (obj: any) => {
   const newObj: any = {};
   Object.keys(obj).forEach((key) => {
     newObj[camelize(key)] = obj[key];
+  });
+
+  return newObj;
+};
+
+export const decamelize = (str: string) => {
+  return str
+    .split(/(?=[A-Z])/)
+    .join("_")
+    .toLowerCase();
+};
+
+export const decamelizeKeys = (obj: any) => {
+  const newObj: any = {};
+  Object.keys(obj).forEach((key) => {
+    newObj[decamelize(key)] = obj[key];
   });
 
   return newObj;

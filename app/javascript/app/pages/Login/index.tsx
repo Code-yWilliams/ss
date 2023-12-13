@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link as RouterLink } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import {
   Container,
@@ -118,7 +118,12 @@ const Login = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2" underline="hover">
+              <Link
+                component={RouterLink}
+                to="/signup"
+                variant="body2"
+                underline="hover"
+              >
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

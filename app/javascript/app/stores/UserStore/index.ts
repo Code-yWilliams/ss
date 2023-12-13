@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 import RootStore from "@stores/RootStore";
 import Users from "@api/Users";
 import User from "./User";
-import { IUser, LoginParams } from "@typings/shared";
+import { IUser, LoginParams, SignupParams } from "@typings/shared";
 
 class UserStore {
   rootStore: RootStore;
@@ -23,6 +23,28 @@ class UserStore {
   login = async ({ email, password, remember }: LoginParams) => {
     try {
       const { data } = await Users.login({ email, password, remember });
+      const { user } = data;
+      this.setUser(user);
+    } catch (e) {}
+  };
+
+  signup = async ({
+    firstName,
+    lastName,
+    phone,
+    email,
+    password,
+    passwordConfirmation,
+  }: SignupParams) => {
+    try {
+      const { data } = await Users.signup({
+        firstName,
+        lastName,
+        phone,
+        email,
+        password,
+        passwordConfirmation,
+      });
       const { user } = data;
       this.setUser(user);
     } catch (e) {}

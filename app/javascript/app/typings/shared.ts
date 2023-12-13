@@ -17,3 +17,12 @@ export interface LoginParams {
   password: string;
   remember: boolean;
 }
+
+export interface SignupParams {
+  firstName: string;
+  lastName: string;
+  phone: string;
+  email: string;
+  password: string;
+  passwordConfirmation: string;
+}

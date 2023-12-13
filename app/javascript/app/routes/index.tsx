@@ -5,6 +5,7 @@ import { LinearProgress } from "@mui/material";
 const HomeLayout = lazy(() => import("@app/components/HomeLayout"));
 const Login = lazy(() => import("@pages/Login"));
 const Private = lazy(() => import("@app/routes/Private"));
+const Signup = lazy(() => import("@pages/Signup"));
 
 const Routes = () => {
   return (
@@ -24,6 +25,14 @@ const Routes = () => {
         element={
           <Suspense fallback={<LinearProgress />}>
             <Login />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/signup"
+        element={
+          <Suspense fallback={<LinearProgress />}>
+            <Signup />
           </Suspense>
         }
       />

@@ -97,7 +97,7 @@ const Signup = () => {
             id="firstName"
             label="First Name"
             name="firstName"
-            autoComplete="first-name"
+            autoComplete="given-name"
             autoFocus
             variant="filled"
             error={!!errors.firstName}
@@ -118,7 +118,7 @@ const Signup = () => {
             id="lastName"
             label="Last Name"
             name="lastName"
-            autoComplete="last-name"
+            autoComplete="family-name"
             autoFocus
             variant="filled"
             error={!!errors.lastName}

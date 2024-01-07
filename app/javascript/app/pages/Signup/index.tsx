@@ -58,8 +58,6 @@ const Signup = () => {
     return <Navigate to="/" />;
   }
 
-  // debugger;
-
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />

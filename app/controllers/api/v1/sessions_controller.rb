@@ -6,9 +6,9 @@ module Api
 
       def create
         user = User.find_for_authentication(email: login_params[:email])
-        user.valid_password?(login_params[:password])
+        user&.valid_password?(login_params[:password])
 
-        if user.errors.empty?
+        if user && user.errors.empty?
           sign_in(user) if user.errors.empty?
           render json: { user: user }, status: :ok
         else

@@ -32,6 +32,6 @@ COPY package.json yarn.lock
 RUN yarn install
 
 # run the app
-ARG DEFAULT_PORT 3000
-EXPOSE ${DEFAULT_PORT}
+ARG PORT 3000
+EXPOSE ${PORT}
 CMD [ "yarn", "start" ]

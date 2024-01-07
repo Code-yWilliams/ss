@@ -10,7 +10,7 @@
     "url": "https://github.com/Code-yWilliams/ss.git"
   },
   "scripts": {
-    "start": "bin/dev"
+    "start": "PORT=3000 bin/dev"
   },
   "devDependencies": {
     "@types/react": "^18.2.41",

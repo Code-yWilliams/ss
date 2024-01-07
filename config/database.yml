@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: ss_development
+  username: ss
+  host: "host.docker.internal"
+  post: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +61,7 @@ development:
 test:
   <<: *default
   database: ss_test
+  host: "localhost"
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: ss_production
-  username: ss
-  password: <%= ENV["SS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

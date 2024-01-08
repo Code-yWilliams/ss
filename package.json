@@ -10,7 +10,9 @@
     "url": "https://github.com/Code-yWilliams/ss.git"
   },
   "scripts": {
-    "start": "PORT=3000 bin/dev"
+    "start": "bin/dev",
+    "docker:build": "docker build -t ss .",
+    "docker:start": "DATABASE_HOST=host.docker.internal docker run -d -p 3000:3000 ss"
   },
   "devDependencies": {
     "@types/react": "^18.2.41",

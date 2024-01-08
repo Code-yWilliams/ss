@@ -24,9 +24,8 @@ default: &default
 development:
   <<: *default
   database: ss_development
-  username: ss
-  host: "host.docker.internal"
-  post: 5432
+  host: "<%= ENV['DATABASE_HOST'] %>"
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -86,3 +85,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  port: <%= ENV['DATABASE_PORT'] %>

@@ -1,0 +1,9 @@
+Next:
+Make Layout component that will be rendered in App component
+It will contain the Routes component that will handle client side routing
+
+Create an elasticache cluster to sit in front of rds
+
+create an rds proxy to pool connection resources to help them scale
+
+use temporary iam roles for github actions instead of a static user + access key
